@@ -1,0 +1,24 @@
+.justifyContentAround {
+  text-align: -webkit-center;
+}
+
+.formStyle {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  max-width: 350px;
+}
+
+.formGroup {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.formControl {
+  width: 200px;
+  margin-left: 10px;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
