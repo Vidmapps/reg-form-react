@@ -13,7 +13,9 @@ export const loadCoordinates = async (user) => {
     .then((response) => response.json())
     .then((data) => (coordinates = data.results[0].geometry.location))
     .catch((error) => {
-      alert(error);
+      alert(
+        "NO API KEY FOUND: assign your own Google maps API key to `const apiKey` in `coordinatesCheck.js`."
+      );
     });
 
   const linkToMap = `https://www.google.com/maps?q=${coordinates.lat}+${coordinates.lng}&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7iaGgwNX4AhUBqYsKHZJABdUQ_AUoAXoECAEQAw`;
