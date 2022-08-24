@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import UsersContext from "../store/users-context";
 
-import styles from "./RegistrationForm.module.css";
+import styles from "./RegistrationForm.module.scss";
 import Button from "./UI/Button";
 
 const RegistrationForm = () => {
@@ -47,7 +47,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className={styles.justifyContentAround}>
+    <div className={styles.alignCenter}>
       <h1>Registration form</h1>
       <form className={styles.formStyle} onSubmit={submitHandler}>
         <h3>User</h3>

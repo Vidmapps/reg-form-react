@@ -3,7 +3,7 @@ import EditableRow from "./EditableRow";
 import ReadOnlyRow from "./ReadOnlyRow";
 import UsersContext from "../store/users-context";
 
-import styles from "./UsersList.module.css";
+import styles from "./UsersList.module.scss";
 
 const UsersList = () => {
   const usersCtx = useContext(UsersContext);
